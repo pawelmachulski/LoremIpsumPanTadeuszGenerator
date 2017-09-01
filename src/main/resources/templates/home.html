@@ -2,9 +2,24 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<form action="/generate" th:method="post">
+    <textarea rows="10" cols="50">
+        Lorem lorem lorem
+        Lorem Lorem Lorem
+    </textarea>
+    <br>
+    <input type="number" value="5" step="1">
+    <input type="submit" value="GENERATE!">
+    <select name="option">
+        <option value="1">PARAGRAPHS</option>
+        <option value="2">SENTECNES</option>
+        <option value="3">WORDS</option>
+    </select>
+</form>
+
 </body>
 </html>

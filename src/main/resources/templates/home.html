@@ -6,10 +6,9 @@
 </head>
 <body>
 
-<form action="/generate" th:method="post">
+<form action="/" th:method="post">
     <textarea rows="10" cols="50">
-        Lorem lorem lorem
-        Lorem Lorem Lorem
+<p th:if="${generator}" th:text="${generator}"/>
     </textarea>
     <br>
     <input type="number" value="5" step="1">

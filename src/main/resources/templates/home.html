@@ -6,18 +6,19 @@
 </head>
 <body>
 
-<form action="/" th:method="post">
-    <textarea rows="10" cols="50">
-<p th:if="${generator}" th:text="${generator}"/>
+<form action="/generate" th:method="post">
+    <textarea th:text="${text}" rows="10" cols="50">
+
     </textarea>
     <br>
-    <input type="number" value="5" step="1">
-    <input type="submit" value="GENERATE!">
+    <input name="number" type="number" value="5" step="1">
     <select name="option">
         <option value="1">PARAGRAPHS</option>
         <option value="2">SENTECNES</option>
         <option value="3">WORDS</option>
     </select>
+    <input type="submit" value="GENERATE!">
+
 </form>
 
 </body>

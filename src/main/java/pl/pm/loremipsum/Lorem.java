@@ -7,6 +7,17 @@ public class Lorem implements LoremIpsum {
     public String[] sentences=lorem.split("\\.");
 
 
+//    public String generateHTML() {
+//        Form form = new Form();
+//        StringBuilder s = new StringBuilder();
+//        if(form.isHtml()==true) {
+//            s.append("<p> " + lorem);
+//        }
+//        else{
+//            s.append(lorem);
+//        }
+//        return lorem = s.toString();
+//    }
 
     @Override
     public String generateParagraphs(int number) {
@@ -41,5 +52,9 @@ public class Lorem implements LoremIpsum {
         return l.toString();
     }
 
+    @Override
+    public String toString() {
+        return lorem;
+    }
 
 }

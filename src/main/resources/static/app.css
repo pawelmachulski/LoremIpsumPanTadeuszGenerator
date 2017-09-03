@@ -1,0 +1,26 @@
+body, html{
+text-align: center;
+background: #ccdcff;
+
+;
+}
+
+#left {
+float: center;
+width 329 px;
+}
+div{
+display: block;
+}
+
+#right{
+width: 329 px;
+float: center;
+}
+
+div{
+display: block;
+}
+#h1{
+float: center;
+}

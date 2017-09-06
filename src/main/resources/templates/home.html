@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $("#p1").hide();
+        $("#md").click(function(){
+        $("#p1").toggle();
+           });
+           });
+    </script>
+
 </head>
 <body>
 <form action="/generate" th:method="post">
     <div id="content">
         <h1>
             <a href="/">
-                <img id="h1" src="https://zapodaj.net/images/048a4f74690ed.png" alt = "img">
+                <img id="h1" src="/header.png" alt = "img">
             </a>
         </h1>
     <div id="left">
@@ -21,19 +31,26 @@
     <select name="textoption">
         <option value="1">Lorem Ipsum</option>
         <option value="2">Pan Tadeusz</option>
-    </select><br>
-    <input name="number" type="number" value="5" step="1"><br>
+    </select><br><br>
+    <input class="input" name="number" type="number" value="1" step="1"><br><br>
     <select name="option">
         <option value="1">PARAGRAPHS</option>
         <option value="2">SENTECNES</option>
         <option value="3">WORDS</option>
-    </select><br>
+    </select><br><br>
         <!--<div>-->
         <!--<span class="cbStyled"><input type="checkbox" name="html" id="html" checked="" /></span>-->
         <!--<label for="html" onclick="tCbLabel('cbImg1','','StyledCheckbox1');return false;"><abbr>HTML</abbr></label>-->
     <!--</div>-->
 
-    <input type="submit" value="GENERATE!">
+    <input class="button" type="submit" value="GENERATE!"><br><br>
+
+        <div id="md">Made by:</div>
+
+        <p id="p1">Paweł Machulski<br>
+            <a href="https://github.com/pawelmachulski">Github</a><br>
+            <a href="https://www.linkedin.com/in/pawelmachulski/">Linkedin</a><br>
+        </p>
     </div>
 
     </div>
